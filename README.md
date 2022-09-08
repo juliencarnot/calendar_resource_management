@@ -18,7 +18,7 @@ All boolean fields default to null if not specified
 
 | Command  | Description | Parameters  | Associated Table | Notes |
 |---|---|---|---|---|
-| calendar-resource:building:create | Create a building resource |`display_name`* `description` `address` `wheelchair_accessible`| `calresources_building` | |
+| calendar-resource:building:create | Create a building resource |`display_name`* `address` `description` `wheelchair_accessible`| `calresources_building` | |
 | calendar-resource:story:create | Create a story resource | `display_name` `building_id` | `calresources_stories` | Needs an associated building id |
 | calendar-resource:room:create | Create a room resource | `story_id`* `uid`* `display_name`* `email`* `room_type`* `contact_person_user_id` `capacity` `room_number` `has_phone` `has_video_conferencing` `has_tv` `has_projector` `has_whiteboard` `wheelchair_accessible` | `calresources_rooms` | Needs an associated story id |
 | calendar-resource:restriction:create | Create a restriction on a resource | `entity_type`* `entity_id`* `group_id`*  | `calresources_restricits` | This restricts a resource to a group |
